@@ -6,10 +6,5 @@
   "social": "Social",
   "followAsyncAPI": "Follow AsyncAPI on",
   "madeWithLove": "Made with love by the AsyncAPI community",
-  "copyright": "© 2023 AsyncAPI Initiative. All rights reserved.",
-  "About" : "About",
-  "Blog" : "Blog",
-  "Brand" : "Brand",
-  "Finance" : "Finance",
-  "FAQs" : "FAQs"
+  "copyright": "© 2023 AsyncAPI Initiative. All rights reserved."
 }

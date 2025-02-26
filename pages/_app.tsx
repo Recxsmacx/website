@@ -37,8 +37,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             <ScrollButton />
           </Layout>
           <div className='mt-auto'>
-           <Footer currentLanguage={locale ?? 'en'} />
-
+           <Footer currentLanguage={locale || 'defaultLanguage'} />
           </div>
         </div>
       </AlgoliaSearch>
