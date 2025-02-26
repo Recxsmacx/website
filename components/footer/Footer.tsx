@@ -11,7 +11,6 @@ interface FooterProps {
   currentLanguage: string;
 }
 import { initiativeLinks, socialMediaLinks } from './FooterList';
-import LinkComponent from '../link';
 
 export default function Footer({ currentLanguage }: FooterProps) {
   const { t } = useTranslation('footer');
@@ -22,11 +21,11 @@ export default function Footer({ currentLanguage }: FooterProps) {
         <nav className='flex flex-wrap justify-between gap-8 py-4 sm:py-10'>
           {/* Logo & Main Heading */}
           <div className='w-full md:w-auto'>
-            <LinkComponent href='/' locale={currentLanguage} aria-label='AsyncAPI'>
+            <Link href='/' aria-label='AsyncAPI'>
               <span className='cursor-pointer' data-testid='Footer-logo-link'>
                 <AsyncAPILogoLight className='mt-3 h-10 w-auto' />
               </span>
-            </LinkComponent>
+            </Link>
             <Heading className='mb-10 mt-8 text-white' typeStyle={HeadingTypeStyle.smSemibold}>
               {t('buildingFuture')}
             </Heading>
@@ -42,11 +41,11 @@ export default function Footer({ currentLanguage }: FooterProps) {
               <ul>
                 {initiativeLinks.map((link: InitiativeLink, index: number) => (
                   <li key={index} className='py-1'>
-                    <LinkComponent href={link.url} locale={currentLanguage}>
+                    <Link href={link.url}>
                       <span className='text-base text-cool-gray transition duration-300 ease-in-out hover:text-white'>
                         {t(link.label)}
                       </span>
-                    </LinkComponent>
+                    </Link>
                   </li>
                 ))}
               </ul>
