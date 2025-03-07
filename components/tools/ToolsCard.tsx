@@ -168,7 +168,7 @@ export default function ToolsCard({ toolData }: ToolsCardProp) {
           </div>
         )}
       </div>
-           {(toolData?.links?.repoUrl || toolData?.links?.websiteUrl || toolData?.links?.docsUrl) && (
+            {(toolData?.links?.repoUrl || toolData?.links?.websiteUrl || toolData?.links?.docsUrl) && (
 
         <>
           <hr className='' />
@@ -202,7 +202,7 @@ export default function ToolsCard({ toolData }: ToolsCardProp) {
                 )}
               </>
             )}
-             {toolData.links.websiteUrl && (
+              {toolData.links.websiteUrl && (
               <a
                 className='w-full cursor-pointer border-x border-gray-200 px-1 py-6 text-center hover:bg-gray-200'
                 href={toolData.links.websiteUrl}
